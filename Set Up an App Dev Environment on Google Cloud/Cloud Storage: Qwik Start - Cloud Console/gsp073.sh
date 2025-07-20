@@ -18,11 +18,6 @@ cat << "EOF"
 EOF
 echo -e "${NC}"
 
-
-export REGION="[YOUR_LAB_REGION]"
-
-
-
 export BUCKET_NAME="gs://${DEVSHELL_PROJECT_ID}"
 export IMAGE_FILE="kitten.png"
 export IMAGE_URL="https://cdn.qwiklabs.com/8tnHNHkj30vDqnzokQ%2FcKrxmOLoxgfaswd9nuZkEjd8%3D"
