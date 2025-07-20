@@ -77,16 +77,16 @@ export IMAGE_URL="https://cdn.qwiklabs.com/8tnHNHkj30vDqnzokQ%2FcKrxmOLoxgfaswd9
 
 echo -e "\n${RED} Starting the DEVDEBUG automation script...${RESET}\n"
 
-echo -e "${BG_IYELLOW} Step 1: Creating a Cloud Storage bucket named ${BUCKET_NAME} in ${REGION}...${RESET}"
+echo -e "${BG_MAGENTA} Step 1: Creating a Cloud Storage bucket named ${BUCKET_NAME} in ${REGION}...${RESET}"
 gsutil mb -l $REGION -c Standard $BUCKET_NAME
 
-echo -e "${BG_IYELLOW} Step 2: Downloading the kitten picture... 🖼️${RESET}"
+echo -e "${BG_MAGENTA} Step 2: Downloading the kitten picture... ${RESET}"
 curl -o $IMAGE_FILE $IMAGE_URL
 
-echo -e "${BG_IYELLOW} Step 3: Uploading the picture to your bucket...${RESET}"
+echo -e "${BG_MAGENTA} Step 3: Uploading the picture to your bucket... ${RESET}"
 gsutil cp $IMAGE_FILE $BUCKET_NAME/$IMAGE_FILE
 
-echo -e "${BG_IYELLOW} Step 4: Sharing the picture with the world by making it public... 🌐${RESET}"
+echo -e "${BG_MAGENTA} Step 4: Sharing the picture with the world by making it public... ${RESET}"
 gsutil iam ch allUsers:objectViewer $BUCKET_NAME
 
 # CODE--------------------------------------------------------------------------------------------
