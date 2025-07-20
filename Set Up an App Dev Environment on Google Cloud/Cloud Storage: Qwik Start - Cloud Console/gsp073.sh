@@ -104,8 +104,9 @@ cat << "EOF"
 EOF
 echo -e "${RESET}"
 
-echo -e "${GREEN}The required resources have been created and configured.${RESET}"
-echo -e "${GREEN}You can now go back to the lab page and click the 'Check my progress' buttons.${RESET}"
-echo -e "${GREEN}Subscribe to ${RESET}DEVDEBUG${RESET}"
+echo -e "The required resources have been created and configured."
+echo -e "You can now go back to the lab page and click the 'Check my progress' buttons."
+echo -e "Subscribe to ${GREEN}DEVDEBUG${RESET}"
+echo -e "${RESET}"
 
 
