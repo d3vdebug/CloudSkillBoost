@@ -75,7 +75,7 @@ export IMAGE_FILE="kitten.png"
 export IMAGE_URL="https://cdn.qwiklabs.com/8tnHNHkj30vDqnzokQ%2FcKrxmOLoxgfaswd9nuZkEjd8%3D"
 
 
-echo -e "\n${RED} Starting the DEVDEBUG automation script...${RESET}\n"
+echo -e "\n${RED} Starting the DEVDEBUG automation script... ${RESET}\n"
 
 echo -e "${BG_MAGENTA} Step 1: Creating a Cloud Storage bucket named ${BUCKET_NAME} in ${REGION}...${RESET}"
 gsutil mb -l $REGION -c Standard $BUCKET_NAME
@@ -104,9 +104,9 @@ cat << "EOF"
 EOF
 echo -e "${RESET}"
 
-echo -e "The required resources have been created and configured."
+echo -e "Feel free to let me know if you run into any issues while running the code."
 echo -e "You can now go back to the lab page and click the 'Check my progress' buttons."
-echo -e "And don't forget to subscribe ${GREEN}DEVDEBUG${RESET}"
+echo -e "And don't forget to subscribe${BG_GREEN} DevDebug ${RESET}."
 echo -e "${RESET}"
 
 
