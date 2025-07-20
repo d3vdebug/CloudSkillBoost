@@ -1,4 +1,4 @@
-# Cloud Storage: Qwik Start - Cloud Console [[GSP872](https://www.cloudskillsboost.google/course_templates/637/labs/526668)]
+# Cloud Storage: Qwik Start - Cloud Console [[GSP073](https://www.cloudskillsboost.google/course_templates/637/labs/526668)]
 
 ## 💡 Solution 
 
