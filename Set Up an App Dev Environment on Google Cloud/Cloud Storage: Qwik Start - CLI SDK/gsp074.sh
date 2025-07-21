@@ -16,7 +16,7 @@ echo -e "${BG_GREEN}"
 cat << "EOF"
  >> Cloud Storage: Qwik Start - CLI/SDK | Automated Lab Solution << 
 EOF
-echo -e "$GREEN}"
+echo -e "${GREEN}"
 cat << "EOF"
                                                                      
  ██████╗ ███████╗██╗   ██╗██████╗ ███████╗██████╗ ██╗   ██╗ ██████╗  
