@@ -5,14 +5,14 @@
 ### Run the following Commands in CloudShell
 
 ```
-export REGION=
+export USERNAME_2=
 ```
 ```
-curl -LO https://raw.githubusercontent.com/d3vdebug/CloudSkillBoost/refs/heads/main/Set%20Up%20an%20App%20Dev%20Environment%20on%20Google%20Cloud/Cloud%20Storage%3A%20Qwik%20Start%20-%20CLI%20SDK/gsp074.sh
+curl -LO https://raw.githubusercontent.com/d3vdebug/CloudSkillBoost/refs/heads/main/Set%20Up%20an%20App%20Dev%20Environment%20on%20Google%20Cloud/Cloud%20IAM%3A%20Qwik%20Start/gsp064.sh
 
-sudo chmod +x gsp074.sh
+sudo chmod +x gsp064.sh
 
-./gsp074.sh
+./gsp064.sh
 ```
 
 <h3>⚠ Caution </h3> 
