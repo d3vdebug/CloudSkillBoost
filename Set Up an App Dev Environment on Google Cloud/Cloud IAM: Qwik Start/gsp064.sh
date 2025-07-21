@@ -14,7 +14,9 @@ UGREEN='\033[4;32m'       # Underline Green
 echo -e "${BG_GREEN}"
 cat << "EOF"
  >> Cloud IAM: Qwik Start | Automated Lab Solution << 
+ 
 EOF
+
 echo -e "$GREEN}"
 cat << "EOF"
                                                                      
