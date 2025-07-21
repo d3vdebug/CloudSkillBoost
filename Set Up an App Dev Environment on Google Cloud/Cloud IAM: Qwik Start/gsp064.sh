@@ -11,15 +11,10 @@ BG_MAGENTA='\033[45m'     # Magenta Background
 UGREEN='\033[4;32m'       # Underline Green
 
 # --- Banner Section ---
-echo -e "${BG_GREEN}"
-cat << "EOF"
- >> Cloud IAM: Qwik Start | Automated Lab Solution << 
- 
-EOF
+echo -e "${BG_GREEN} >> Cloud IAM: Qwik Start | Automated Lab Solution << ${RESET}"
 
-echo -e "$GREEN}"
+echo -e "${GREEN}"
 cat << "EOF"
-                                                                     
  ██████╗ ███████╗██╗   ██╗██████╗ ███████╗██████╗ ██╗   ██╗ ██████╗  
  ██╔══██╗██╔════╝██║   ██║██╔══██╗██╔════╝██╔══██╗██║   ██║██╔════╝  
  ██║  ██║█████╗  ██║   ██║██║  ██║█████╗  ██████╔╝██║   ██║██║  ███╗ 
