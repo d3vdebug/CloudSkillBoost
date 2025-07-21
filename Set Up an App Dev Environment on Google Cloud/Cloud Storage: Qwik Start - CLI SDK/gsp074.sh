@@ -41,24 +41,26 @@ export IMAGE_URL="https://storage.googleapis.com/cloud-training/gsp313/sad-cat.j
 # --- Script Execution ---
 echo -e "\n${RED} Starting the DEVDEBUG automation script... ${RESET}\n"
 
-echo -e "${BG_MAGENTA} Step 1: Setting the default region to ${REGION}...${RESET}"
+echo -e "${BG_MAGENTA} Step 1: Setting the default region to ${REGION}... ${RESET}"
 gcloud config set compute/region $REGION
 
-echo -e "${BG_MAGENTA} Step 2: Creating a Cloud Storage bucket named ${BUCKET_NAME}...${RESET}"
+echo -e "${BG_MAGENTA} Step 2: Creating a Cloud Storage bucket in ${REGION}... ${RESET}"
 gsutil mb -l $REGION $BUCKET_NAME
 
-echo -e "${BG_MAGENTA} Step 3: Downloading the sample image file... 🖼️${RESET}"
-wget -O $DOWNLOADED_FILENAME $IMAGE_URL
+echo -e "${BG_MAGENTA} Step 3: Downloading the Ada Lovelace portrait... ${RESET}"
+curl ${IMAGE_URL} --output ${IMAGE_FILE}
 
-echo -e "${BG_MAGENTA} Step 4: Uploading the image to your bucket...${RESET}"
-gsutil cp $DOWNLOADED_FILENAME $BUCKET_NAME/$UPLOAD_FILENAME
+echo -e "${BG_MAGENTA} Step 4: Uploading the image to the bucket... ${RESET}"
+gsutil cp ${IMAGE_FILE} ${BUCKET_NAME}
 
-echo -e "${BG_MAGENTA} Step 5: Copying the image to the '${FOLDER_NAME}' folder... ${RESET}"
-gsutil cp $BUCKET_NAME/$UPLOAD_FILENAME $BUCKET_NAME/$FOLDER_NAME/
+echo -e "${BG_MAGENTA} Step 5: Copying the image back to the local directory... ${RESET}"
+gsutil cp -r ${BUCKET_NAME}/${IMAGE_FILE} .
 
-# --- This is the corrected command for Step 6 ---
-echo -e "${BG_MAGENTA} Step 6: Making the original image public... ${RESET}"
-gsutil acl ch -u AllUsers:R $BUCKET_NAME/$UPLOAD_FILENAME
+echo -e "${BG_MAGENTA} Step 6: Copying the image to the '${FOLDER_NAME}' folder... ${RESET}"
+gsutil cp ${BUCKET_NAME}/${IMAGE_FILE} ${BUCKET_NAME}/${FOLDER_NAME}/
+
+echo -e "${BG_MAGENTA} Step 7: Making the original image public... ${RESET}"
+gsutil acl ch -u AllUsers:R ${BUCKET_NAME}/${IMAGE_FILE}
 
 
 # --- Final Message ---
