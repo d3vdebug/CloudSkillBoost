@@ -38,10 +38,10 @@ echo -e "${BG_MAGENTA} Step 1: Setting the default region to ${REGION}... ${RESE
 gcloud config set compute/region $REGION
 
 # This command now includes the required location flag to pass the lab check.
-echo -e "${BG_MAGENTA} Step 2: Creating a Cloud Storage bucket in ${REGION}...${RESET}"
+echo -e "${BG_MAGENTA} Step 2: Creating a Cloud Storage bucket in ${REGION}... ${RESET}"
 gsutil mb -l $REGION gs://$DEVSHELL_PROJECT_ID
 
-echo -e "${BG_MAGENTA} Step 3: Downloading the Ada Lovelace portrait... 🖼️${RESET}"
+echo -e "${BG_MAGENTA} Step 3: Downloading the Ada Lovelace portrait... ${RESET}"
 curl https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/800px-Ada_Lovelace_portrait.jpg --output ada.jpg
 
 echo -e "${BG_MAGENTA} Step 4: Uploading the image to the bucket... ${RESET}"
