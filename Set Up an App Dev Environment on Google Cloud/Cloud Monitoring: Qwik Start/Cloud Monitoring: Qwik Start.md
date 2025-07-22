@@ -8,7 +8,7 @@
 export REGION=
 ```
 ```
-curl -LO https://raw.githubusercontent.com/d3vdebug/CloudSkillBoost/refs/heads/main/Set%20Up%20an%20App%20Dev%20Environment%20on%20Google%20Cloud/Cloud%20Storage%3A%20Qwik%20Start%20-%20CLI%20SDK/gsp074.sh
+curl -LO https://raw.githubusercontent.com/d3vdebug/CloudSkillBoost/refs/heads/main/Set%20Up%20an%20App%20Dev%20Environment%20on%20Google%20Cloud/Cloud%20Monitoring%3A%20Qwik%20Start/gsp089.sh
 
 sudo chmod +x gsp089.sh
 
